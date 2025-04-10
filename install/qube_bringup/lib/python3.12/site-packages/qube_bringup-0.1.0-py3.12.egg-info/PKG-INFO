@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: qube-bringup
+Version: 0.1.0
+Summary: Bringup package for the Quanser Qube using ROS2 Control
+Maintainer: christian
+Maintainer-email: christian@example.com
+License: MIT

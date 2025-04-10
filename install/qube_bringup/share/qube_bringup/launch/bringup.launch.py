@@ -10,13 +10,15 @@ def generate_launch_description():
     qube_bringup_dir = get_package_share_directory('qube_bringup')
     qube_driver_dir = get_package_share_directory('qube_driver')    
 
+    # Sti til xacro-filen i qube_bringup
     xacro_file = os.path.join(qube_bringup_dir, 'urdf', 'controlled_qube.urdf.xacro')
     description = xacro.process_file(xacro_file).toxml()
     
+    # Sti til en launchfil i qube_driver
     qube_driver_launch = os.path.join(qube_driver_dir, 'launch', 'qube_driver.launch.py')
 
     return LaunchDescription([
-        # driver-launch
+        # Inkluder driver-launch (starter ros2_control_node, hardware-driver etc.)
         IncludeLaunchDescription(
             PythonLaunchDescriptionSource(qube_driver_launch)
         ),
@@ -30,7 +32,7 @@ def generate_launch_description():
             parameters=[{'robot_description': description}]
         ),
 
-        # RViz
+        # Start RViz (valgfritt)
         Node(
             package='rviz2',
             executable='rviz2',

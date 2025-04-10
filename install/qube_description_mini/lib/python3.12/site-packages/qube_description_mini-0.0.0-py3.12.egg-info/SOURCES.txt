@@ -1,0 +1,17 @@
+package.xml
+setup.cfg
+setup.py
+../../build/qube_description_mini/qube_description_mini.egg-info/PKG-INFO
+../../build/qube_description_mini/qube_description_mini.egg-info/SOURCES.txt
+../../build/qube_description_mini/qube_description_mini.egg-info/dependency_links.txt
+../../build/qube_description_mini/qube_description_mini.egg-info/requires.txt
+../../build/qube_description_mini/qube_description_mini.egg-info/top_level.txt
+../../build/qube_description_mini/qube_description_mini.egg-info/zip-safe
+launch/view_qube.launch.py
+qube_description_mini/__init__.py
+resource/qube_description_mini
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py
+urdf/qube.macro.xacro
+urdf/qube.urdf.xacro
